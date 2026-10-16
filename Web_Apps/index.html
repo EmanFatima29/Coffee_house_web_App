@@ -10,35 +10,306 @@
 <body>
   <!-- ================= HEADER ================= -->
   <header class="header">
-  <div class="container">
-    <a href="#" class="logo" aria-label="EF Cafe home">
+    <div class="container">
+      <a href="#" class="logo" aria-label="EF Cafe home">
         <i class="fa-solid fa-mug-hot"></i>
         <span>EF <em>Cafe</em></span>
       </a>
-      <nav>
-        <h1>EF Cafe</h1>
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Our Story</a></li>
-        <li><a href="">Visit Us</a></li>
-        <li><a href="">Menu</a></li>
-        <li><a href="" id="order">Order and Reserve</a></li>
-      </ul>
-    </nav>
-    <div class="main_content">
-      <div class="left">
-        <h3>Web</h3>
-        <h2>Design &<br><span>Development</span></h2>
-        <h2>Lorem ipsum</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, excepturi facere laboriosam veritatis dignissimos consectetur debitis repellendus eius odio, quam nisi. Consequatur error quibusdam aut corrupti maxime mollitia odio culpa.</p>
-        <button>READ MORE</button>
-      </div>
-      <div class="right"></div>
-      <img src="./images/Coffee_image.png" alt="Coffee_image">
-    </div>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#visit">Visit Us</a></li>
+        </ul>
+      </nav>
+
+      <a href="#order" class="btn btn-primary">Order Online</a>
+      <button type="button" class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </div>
   </header>
+    <main>
+
+    <!-- ================= HERO + CAROUSEL ================= -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+
+        <!-- Left: Text -->
+        <div class="hero-content">
+          <p class="eyebrow">Freshly Roasted · Since 2020</p>
+
+          <h1>
+            Your Daily Cup of
+            <span>Happiness</span>
+          </h1>
+
+          <p class="hero-text">
+            Small-batch beans, handcrafted drinks, and a cozy corner waiting
+            for you. EF Cafe is where your morning begins.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn-primary">
+              View Menu <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#visit" class="btn btn-outline">
+              <i class="fa-solid fa-location-dot"></i> Find Us
+            </a>
+          </div>
+
+          <ul class="hero-stats">
+            <li><strong>12+</strong><span>Signature Blends</span></li>
+            <li><strong>4.9★</strong><span>Customer Rating</span></li>
+            <li><strong>3</strong><span>Locations</span></li>
+          </ul>
+        </div>
+
+        <!-- Right: Carousel -->
+        <div class="hero-carousel" aria-label="Featured drinks carousel" aria-roledescription="carousel">
+          <div class="carousel-track">
+
+            <div class="carousel-slide active" role="group" aria-label="1 of 3">
+              <img src="./images/espresso.png" alt="Freshly pulled espresso in a small cup" />
+              <div class="slide-caption">
+                <h3>Classic Espresso</h3>
+                <p>Rich, bold, perfectly pulled.</p>
+              </div>
+            </div>
+
+            <div class="carousel-slide" role="group" aria-label="2 of 3">
+              <img src="./images/latte.png" alt="Creamy latte with foam art" />
+              <div class="slide-caption">
+                <h3>Velvet Latte</h3>
+                <p>Silky steamed milk, smooth finish.</p>
+              </div>
+            </div>
+
+            <div class="carousel-slide" role="group" aria-label="3 of 3">
+              <img src="./images/coldbrew.png" alt="Iced cold brew coffee in a tall glass" />
+              <div class="slide-caption">
+                <h3>Cold Brew</h3>
+                <p>Slow-steeped 18 hours for smoothness.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <button class="carousel-btn prev" aria-label="Previous slide">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="carousel-btn next" aria-label="Next slide">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+
+          <div class="carousel-dots" role="tablist" aria-label="Choose slide">
+            <button class="dot active" role="tab" aria-label="Slide 1" aria-selected="true"></button>
+            <button class="dot" role="tab" aria-label="Slide 2" aria-selected="false"></button>
+            <button class="dot" role="tab" aria-label="Slide 3" aria-selected="false"></button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= FEATURES ================= -->
+    <section class="features">
+      <div class="container">
+
+        <p class="eyebrow center">Why EF Cafe</p>
+        <h2 class="section-title">More Than Just Coffee</h2>
+
+        <div class="feature-grid">
+
+          <article class="feature-card">
+            <i class="fa-solid fa-seedling"></i>
+            <h3>Ethically Sourced</h3>
+            <p>Direct-trade beans from farms we know by name.</p>
+          </article>
+
+          <article class="feature-card">
+            <i class="fa-solid fa-fire"></i>
+            <h3>Roasted In-House</h3>
+            <p>Small batches, roasted every morning before we open.</p>
+          </article>
+
+          <article class="feature-card">
+            <i class="fa-solid fa-mug-saucer"></i>
+            <h3>Barista Crafted</h3>
+            <p>Every cup treated like art — because it is.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MENU ================= -->
+    <section id="menu" class="menu">
+      <div class="container">
+
+        <p class="eyebrow center">Our Menu</p>
+        <h2 class="section-title">EF Cafe Favorites</h2>
+        <p class="section-subtitle">
+          Handpicked drinks our regulars can't live without.
+        </p>
+
+        <div class="menu-grid">
+
+          <article class="menu-item">
+            <img src="./images/menu-espresso.png" alt="Espresso" />
+            <h3>Espresso</h3>
+            <p class="price">$3.50</p>
+          </article>
+
+          <article class="menu-item">
+            <img src="./images/menu-cappuccino.png" alt="Cappuccino" />
+            <h3>Cappuccino</h3>
+            <p class="price">$4.25</p>
+          </article>
+
+          <article class="menu-item">
+            <img src="./images/menu-mocha.png" alt="Mocha" />
+            <h3>Mocha</h3>
+            <p class="price">$4.75</p>
+          </article>
+
+          <article class="menu-item">
+            <img src="./images/menu-coldbrew.png" alt="Cold Brew" />
+            <h3>Cold Brew</h3>
+            <p class="price">$4.00</p>
+          </article>
+
+        </div>
+
+        <div class="menu-cta">
+          <a href="#" class="btn btn-outline">See Full Menu</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="about">
+      <div class="container about-grid">
+
+        <div class="about-image">
+          <img src="./images/cafe-interior.png" alt="Inside EF Cafe — warm interior with wooden tables" />
+        </div>
+
+        <div class="about-content">
+          <p class="eyebrow">Our Story</p>
+          <h2>Small Roastery, Big Heart</h2>
+          <p>
+            EF Cafe started with one roaster, a tiny counter, and a stubborn
+            belief that great coffee should feel personal. Years later, we're
+            still obsessed with the same thing — the perfect cup.
+          </p>
+          <p>
+            Whether you're here for a quick espresso or a long afternoon, you
+            always have a seat at our table.
+          </p>
+          <a href="#" class="btn btn-outline">Read Our Story</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section class="testimonials">
+      <div class="container">
+
+        <p class="eyebrow center">Kind Words</p>
+        <h2 class="section-title">What Our Regulars Say</h2>
+
+        <div class="testimonial-grid">
+
+          <blockquote class="testimonial">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Best cold brew in the city. Period."</p>
+            <footer><cite>— Sarah M.</cite></footer>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"The staff remembers my order. That's everything."</p>
+            <footer><cite>— Daniel R.</cite></footer>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"My morning ritual wouldn't be the same without EF Cafe."</p>
+            <footer><cite>— Priya K.</cite></footer>
+          </blockquote>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NEWSLETTER CTA ================= -->
+    <section id="order" class="cta">
+      <div class="container cta-box">
+
+        <h2>Get 15% Off Your First Order</h2>
+        <p>Join the EF Cafe list — brew tips, new roasts, and member perks.</p>
+
+        <form class="cta-form" action="#" method="post">
+          <label for="email" class="sr-only">Email address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer id="visit" class="footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <i class="fa-solid fa-mug-hot"></i>
+          <span>EF <em>Cafe</em></span>
+        </a>
+        <p>Freshly brewed, every day.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#order">Order Online</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Visit Us</h3>
+        <address>
+          42 Roast Lane<br />
+          Portland, OR 97205<br />
+          Mon–Sun · 7am – 8pm
+        </address>
+      </div>
+
+      <div class="footer-col">
+        <h3>Follow</h3>
+        <ul class="socials">
+          <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 EF Cafe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
-
